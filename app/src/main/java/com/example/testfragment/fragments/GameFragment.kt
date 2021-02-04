@@ -1,10 +1,8 @@
 package com.example.testfragment.fragments
 
 import android.os.Bundle
+import android.view.*
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.testfragment.R
@@ -27,7 +25,6 @@ class GameFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_game, container, false)
 
         //Instanciar a RecyclerView
@@ -45,7 +42,16 @@ class GameFragment : Fragment() {
         //Atualizar a lista de jogos do adapter
         gameAdapter.updateGameList(gameList)
 
+        //Tornar o menu visivel
+        setHasOptionsMenu(true)
+
             return view
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        super.onCreateOptionsMenu(menu, inflater)
+
+        inflater.inflate(R.menu.menu_game, menu)
     }
 
 }

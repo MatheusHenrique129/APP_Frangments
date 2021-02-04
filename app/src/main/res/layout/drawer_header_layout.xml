@@ -20,23 +20,23 @@
             android:layout_width="64dp"
             android:layout_height="64dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/foto_perfil"/>
+            android:src="@drawable/photo_perfil"/>
     </androidx.cardview.widget.CardView>
 
     <TextView
-    android:id="@+id/text_view_perfil_name"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Ana Paula Valadão"
-    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-    app:layout_constraintBottom_toTopOf="@id/text_view_perfil_email"
-    app:layout_constraintStart_toStartOf="parent"/>
+        android:id="@+id/text_view_perfil_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amor eu te amo!!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toTopOf="@id/text_view_perfil_email"
+        app:layout_constraintStart_toStartOf="parent"/>
 
     <TextView
         android:id="@+id/text_view_perfil_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="paula_valadão@yahoo.com"
+        android:text="matheustennant@gmail.com"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
 
@@ -47,11 +47,11 @@
         android:text="Editar"
         style="@style/Widget.AppCompat.Button.Borderless"
         app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         android:minWidth="0dp"
         android:minHeight="0dp"/>
 
-   <View
+    <View
         android:layout_width="0dp"
         android:layout_height="2dp"
         android:background="@android:color/white"
